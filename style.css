@@ -1,0 +1,12 @@
+.brand {
+  box-shadow: 0px 3px 10px 0px rgba(202, 220, 246, 0.69);
+  -webkit-box-shadow: 0px 3px 10px 0px rgba(202, 220, 246, 0.69);
+  -moz-box-shadow: 0px 3px 10px 0px rgba(202, 220, 246, 0.69);
+}
+.bg-2 {
+  background-color: rgba(255, 255, 255, 0);
+}
+.container2{
+    background: rgb(174,205,238);
+background: radial-gradient(circle, rgba(174,205,238,1) 0%, rgba(148,187,233,1) 100%);
+}
