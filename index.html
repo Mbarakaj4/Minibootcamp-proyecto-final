@@ -11,13 +11,13 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>Calculadora de impuestos</title>
   </head>
   <body>
     <nav class="navbar fixed-top navbar-light bg-light bg-gradient brand container2">
       <div class="container">
-        <h1 class="text-uppercase fs-3" style="color: #66b3ff">AG BANK</h1>
-        <button
+        <h1 class="text-uppercase fs-3" style="color: #66b3ff">Calculadora de iva</h1>
+        <!-- <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
@@ -27,7 +27,9 @@
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
-        </button>
+        </button> -->
+        <div class="navbar exchange">
+        </div>
       </div>
     </nav>
 
@@ -36,35 +38,40 @@
     >
       <div class="row container">
         <div class="col">
-          <h2 class="text-uppercase fs-2">Lorem ipsum dolor sit amet.</h2>
+          <h2 class="text-uppercase fs-2">Ley Nº 6380 <br> DE MODERNIZACIÓN Y SIMPLIFICACIÓN DEL SISTEMA TRIBUTARIO NACIONAL</h2>
           <p class="fs-5 text-muted">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Asi como lo dicta el articulo Nro 90 de la ley 6380, el poder judicial fija una tasa del el 10% (diez por ciento) para los productos, bienes y servicios tanto fisicos como digitales
           </p>
           <form action="">
             <div class="container">
-              <label for="customRange1" class="form-label">Example range</label>
+              <label for="customRange1" class="form-label">Calcular IVA (sin punto decimal)</label>
               <div class="input-group mb-3">
-                <span class="input-group-text">$</span>
+                <span class="input-group-text">Gs.</span>
                 <input
                   type="text"
                   class="form-control"
+                  id="calc-iva"
                   aria-label="Amount (to the nearest dollar)"
                 />
               </div>
-              <input type="range" class="form-range" id="customRange1" />
+              <!-- <input type="range" class="form-range" id="customRange1" /> -->
             </div>
             <hr class="my-4 mx-auto" />
             <div class="container">
-              <label for="customRange1" class="form-label">Example range</label>
+              <label for="customRange1" class="form-label">Conversor de divisa (sin punto decimal)</label>
               <div class="input-group mb-3">
-                <span class="input-group-text">$</span>
+                <span class="input-group-text">></span>
                 <input
                   type="text"
                   class="form-control"
-                  aria-label="Amount (to the nearest dollar)"
+                  id="exConverter"
+                  aria-label="Amount"
                 />
               </div>
-              <input type="range" class="form-range" id="customRange1" />
+              <!-- <input type="range" class="form-range" id="customRange1" /> -->
+              <button type="button" class="btn btnform btn-pyg">PYG => USD</button>
+              <button type="button" class="btn btnform btn-usd">USD => PYG</button>
+              
             </div>
           </form>
         </div>
@@ -74,35 +81,38 @@
             style="background-color: #ffffff"
           >
             <div class="card-body">
+              <div class="card-body1">
               <h5 class="card-title">TOTAL</h5>
-              <span class="text-muted">Lorem, ipsum dolor.</span>
-              <h2 class="fs-1">$780</h2>
+              <span class="text-muted">Utiliza una de las calculadoras y el resultado se vera aqui</span>
+              <h2 class="fs-1" id="fs-1">Gs. 0</h2>
+            </div>
+            <div class="card-body2">
               <table class="table">
                 <thead>
                   <tr>
                     <th scope="col">#</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Handle</th>
+                    <th scope="col">Compra</th>
+                    <th scope="col">Venta</th>
+                    <th scope="col">Empresa</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
+                  <tr id="tr-1">
                     <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                   </tr>
-                  <tr>
+                  <tr id="tr-2">
                     <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                   </tr>
                 </tbody>
               </table>
-
-              <button type="button" class="btn btn-primary">Button</button>
+            </div>
+              <button type="button" class="btn btn-primary">Calcular IVA</button>
             </div>
           </div>
         </div>
@@ -112,6 +122,9 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
+    ></script>
+    <script
+      src="script.js"
     ></script>
   </body>
 </html>

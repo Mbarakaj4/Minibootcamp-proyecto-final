@@ -10,3 +10,27 @@
     background: rgb(174,205,238);
 background: radial-gradient(circle, rgba(174,205,238,1) 0%, rgba(148,187,233,1) 100%);
 }
+
+.fs-5{
+  text-align: justify;
+}
+
+.btnform{
+  color: #fff;
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+  box-shadow: 0 0 0 .25rem rgba(49,132,253,.5);
+}
+
+.btn-usd{
+  margin-left: 50%;
+}
+
+.card-body1{
+  margin: auto;
+  position: relative;
+}
+
+.card-body2{
+  visibility: visible;
+}
